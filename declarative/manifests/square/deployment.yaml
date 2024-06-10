@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-square
+  namespace: default
+  labels:
+    app: backend-square
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend-square
+  template:
+    metadata:
+      labels:
+        app: backend-square
+    spec:
+      containers:
+        - name: infra-backend
+          image: jaypd/infrabackend:585f7a4ee2b9d251f2cd4ccd0523705494a64e77
+          ports:
+            - containerPort: 80
