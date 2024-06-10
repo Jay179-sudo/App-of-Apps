@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-square
+  name: backend-square-1
   namespace: default
   labels:
     app: backend-square

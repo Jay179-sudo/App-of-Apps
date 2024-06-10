@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-circle
+  name: backend-circle-1
   namespace: default
   labels:
     app: backend-circle
