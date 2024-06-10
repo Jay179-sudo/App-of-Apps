@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-square
-  namespace: argocd
+  namespace: default
   labels:
     app: backend-square
 spec:
