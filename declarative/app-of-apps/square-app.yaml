@@ -8,9 +8,11 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    path: ./declarative/manifests/square
-    repoURL: https://github.com/Jay179-sudo/App-of-Apps.git
-    targetRevision: HEAD
+    chart: prometheus-community
+    repoURL: https://prometheus-community.github.io/helm-charts
+    targetRevision: 60.1.0
+    helm:
+      releaseName: prometheus
   syncPolicy:
     automated:
       prune: true

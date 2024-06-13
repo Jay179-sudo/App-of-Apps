@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: infra-backend
-          image: jaypd/infrabackend:585f7a4ee2b9d251f2cd4ccd0523705494a64e77
+          image: nginx
           ports:
             - containerPort: 80
